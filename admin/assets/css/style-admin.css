@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-columns: 2fr 10fr;
+}
+
+.admin-menu{
+    background-color: #4e73df;
+    padding: 15px;
+
+}
+
+.admin-corpo{
+    background-color: #cccccc;
+    overflow-y: scroll;
+    padding: 15px;
+}
+
+nav ul{
+    padding: 5px;
+}
+
+nav ul li{
+    list-style-type: none;
+    padding: 6px 10px;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+
+}
+
+.admin-logo{
+    font-size: 1.4rem;
+    color: #fff;
+    font-weight: bold;
+}
+

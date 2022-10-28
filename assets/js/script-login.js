@@ -22,7 +22,26 @@ const validaLogin = () =>{
         method : 'POST',
         body : dados
     })
+
+    .then((response) => response.json())
+    .then((result)=> {
+        //aqui é tratado o retorno ao front
+
+        if(result.retorno == 'erro'){
+            Swal.fire({
+                icon: 'error',
+                title: 'Atenção...',
+                text: result.mensagem
+              })
+        }else{
+            window.location = "admin/"
+
+        }
+
+        // result.retorno == 'ok' ? window.location.replace("http://localhost/sistema-escola/paginaInicial.php") : ''
+
+    })
     
 
 }
-
+//final da funçao de add usuario
