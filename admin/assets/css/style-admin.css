@@ -16,13 +16,12 @@ body{
 }
 
 .admin-menu{
-    background-color: #4e73df;
+    background-color: #141e41;
     padding: 15px;
-
 }
 
 .admin-corpo{
-    background-color: #cccccc;
+    background-color: #bab5b5;
     overflow-y: scroll;
     padding: 15px;
 }
@@ -41,12 +40,74 @@ nav ul li a{
     text-decoration: none;
     color: #fff;
     font-size: 1.2rem;
+    letter-spacing: 4px;
 
+}
+
+nav ul li a:hover{
+    font-weight: bold;
 }
 
 .admin-logo{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     color: #fff;
     font-weight: bold;
 }
+
+.admin-logout{
+    color: #FFF;
+    font-size: 1.2rem;
+    display: grid;
+    
+    
+}
+
+.admin-logout i{
+    cursor: pointer;
+}
+
+.admin-logout i:hover{
+    color:black
+}
+
+.menu-ativo{
+    font-weight: bold;
+}
+.grid-professores{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+}
+
+.grid-professores input{
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 4px;
+    border: none;
+}
+
+.btn-cadastrar{
+    padding: 8px 12px;
+    background-color: forestgreen;
+    color: #fff;
+    border: 0px;
+    border-radius: 4px;
+    margin-top: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.input-cep{
+    width: 90% !important;
+}
+
+.btn-cep{
+    width: 9% !important;
+    padding: 6px 10px;
+    background-color: #141e41;
+    color: #FFF;
+    border-color: #fff;
+    cursor: pointer;
+}
+
 

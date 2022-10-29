@@ -42,7 +42,7 @@ CREATE TABLE IF NOT EXISTS `tb_usuarios` (
   UNIQUE KEY `email` (`email`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
 
--- Copiando dados para a tabela db_escola.tb_usuarios: ~1 rows (aproximadamente)
+-- Copiando dados para a tabela db_escola.tb_usuarios: ~0 rows (aproximadamente)
 INSERT INTO `tb_usuarios` (`id`, `email`, `senha`, `ativo`, `data_cadastro`) VALUES
 	(1, 'jeneffer@hotmail.com', 'senac', b'1', '2022-10-26 22:16:59');
 
