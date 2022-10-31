@@ -3,6 +3,16 @@ const consultaCEP = () => {
 }
 
 
-const caddProfessor = () => {
+const addProfessor = () => {
 
+}
+
+const addAluno = () => {
+
+
+}
+
+const addNotas = () => {
+
+    
 }
