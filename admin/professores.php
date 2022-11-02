@@ -1,16 +1,16 @@
-<?php
+ <?php
 //controle de sessao
 //iniciando a sessao
-session_start();
+//session_start();
 
 //se a var sessao email nao estiver setada o usuario sera redirecionado para o login
 //somente e permitido acesso a essa pagina se a sessao foi iniciada
 //apenas o usuario que fez login corretamente podera acessaer esta pagina
-if (!isset($_SESSION['email'])) {
-    header('location: ../');
-}
+//if (!isset($_SESSION['email'])) {
+//    header('location: ../');
+//}
 
-?>
+?> 
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -79,6 +79,19 @@ if (!isset($_SESSION['email'])) {
                         <label for="cpf">CPF</label>
                         <input type="text" name="cpf" id="cpf">
                     </div>
+
+                    <div>
+                        <label for="nascimento">Data de nascimento</label>
+                        <input type="date" name="nascimento" id="nascimento">
+                    </div>
+
+                    <div>
+                        <label for="tipo">Tipo</label>
+                        <select name="tipo" id="tipo">
+                            <option value="" disabled selected>Selecione...</option>
+                        </select>
+                    </div>
+
                     <div>
                         <label for="cep">CEP</label>
                         <div>
@@ -123,7 +136,7 @@ if (!isset($_SESSION['email'])) {
 
                 </div>
 
-                <button type="button" class="btn-cadastrar" onclick="addProfessor()">Cadastrar</button>
+                <button type="button" class="btn-cadastrar" onclick="addUsuarios()">Cadastrar</button>
 
 
             </div>

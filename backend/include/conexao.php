@@ -1,10 +1,10 @@
 <?php
     try {
         //dados da conexão com o BD
-        define('SERVIDOR', 'localhost');
-        define('USUARIO', 'root');
-        define('SENHA', '');
-        define('BASEDADOS', 'db_escola');
+        define('SERVIDOR', '10.97.46.121');
+        define('USUARIO', 'jheny');
+        define('SENHA', 'senac');
+        define('BASEDADOS', 'db_escola_jheny');
 
         $conexao = new PDO("mysql:host=".SERVIDOR.";dbname=".BASEDADOS.";charset=utf8", USUARIO, SENHA);
         // set the PDO error mode to exception
