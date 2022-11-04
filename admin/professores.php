@@ -60,11 +60,28 @@
         <!--  aqui será o conteudo da pagina -->
         <main class="admin-corpo">
 
-            <h2>Gestão de Professores</h2>
+            
             <div class="div-professores">
+
+            <div class="tabs">
+                    <div class="titulo-principal tab-ativo">
+                        <p class="titulo-texto">
+                            Cadastro de Usuários
+                        </p>
+                    </div>
+
+                    <div class="titulo-principal">
+                        <p class="titulo-texto">
+                            Listagem
+                        </p>
+
+                    </div>
+
+                </div>
+
             <form id="form-professores">
                 <div class="grid-professores">
-                  
+
                     <div>
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome">
@@ -96,11 +113,12 @@
 
                     <div>
                         <label for="cep">CEP</label>
-                        <div>
+                        <div class="div-cep">
                             <input class="input-cep" type="text" name="cep" id="cep">
                             <button class="btn-cep" type="button" onclick="consultaCEP()"><i class="fa-solid fa-magnifying-glass"></i></button>
                         </div>
                     </div>
+
                     <div>
                         <label for="rua">Rua</label>
                         <input type="text" name="rua" id="rua">

@@ -104,17 +104,47 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+.div-cep{
+    display: flex;
+}
+
 .input-cep{
-    width: 90% !important;
+   border-radius: 4px 0px 0px 4px !important;
+   border-right: 0 !important;
+
 }
 
 .btn-cep{
-    width: 9% !important;
     padding: 6px 10px;
     background-color: #141e41;
+    border: 1px solid #fff;
     color: #FFF;
-    border-color: #fff;
+    border-radius: 0px 4px 4px 0px;
     cursor: pointer;
 }
 
+.tabs{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 15px;
+}
 
+.titulo-principal{
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-bottom: none;
+    padding: 3px 10px;
+    border-radius: 4px 4px 0px 0px;
+    cursor: pointer;
+   
+}
+
+.tab-ativo{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    font-weight: bold;
+}
+
+.titulo-texto{
+    margin: 7px;
+    
+}
