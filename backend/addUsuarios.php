@@ -12,7 +12,7 @@ try{
     $telefone = str_replace($limpa,'',$_POST['telefone']);
     $cpf = str_replace($limpa,'',$_POST['cpf']);
     $nascimento = $_POST['nascimento'];
-    $tipo = $_POST['tipo'];
+    
 
     //endereço
     $cep = str_replace($limpa,'',$_POST['cep']);
@@ -23,7 +23,17 @@ try{
     $estado = $_POST['estado'];
     $complemento = $_POST['complemento'];
 
-    
+    //validação do campo tipo -disbabled no option do form
+    if(!isset($_POST['tipo'])){
+
+        $retorno = array("retorno"=>"erro","mensagem"=>"Escolha o tipo do cadastro");
+        $json = json_encode($retorno,JSON_UNESCAPED_UNICODE);
+        echo $json;
+        exit;
+    }else{
+        $tipo = $_POST['tipo'];
+
+    }
 
     //conversao da data ara o formato 01-10-2000
     //$senha = implode('-',array_reverse(explode('-',$nascimento)));

@@ -91,7 +91,7 @@ const addUsuarios = () =>{
         
         if (result.retorno == 'ok') {
             Swal.fire({
-                icon: 'sucess',
+                icon: 'success',
                 title: 'Sucesso!',
                 text: result.mensagem,
     });
