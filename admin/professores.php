@@ -62,7 +62,9 @@
 
             <h2>Gestão de Professores</h2>
             <div class="div-professores">
+            <form id="form-professores">
                 <div class="grid-professores">
+                  
                     <div>
                         <label for="nome">Nome</label>
                         <input type="text" name="nome" id="nome">
@@ -88,7 +90,7 @@
                     <div>
                         <label for="tipo">Tipo</label>
                         <select name="tipo" id="tipo">
-                            <option value="" disabled selected>Selecione...</option>
+                            <option value="tipo" disabled selected>Selecione...</option>
                         </select>
                     </div>
 
@@ -137,7 +139,7 @@
                 </div>
 
                 <button type="button" class="btn-cadastrar" onclick="addUsuarios()">Cadastrar</button>
-
+                </form>
 
             </div>
 
