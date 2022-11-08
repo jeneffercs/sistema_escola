@@ -111,6 +111,7 @@ nav ul li a:hover{
 .input-cep{
    border-radius: 4px 0px 0px 4px !important;
    border-right: 0 !important;
+   width: 90% !important;
 
 }
 
@@ -119,6 +120,7 @@ nav ul li a:hover{
     background-color: #141e41;
     border: 1px solid #fff;
     color: #FFF;
+    border: 1px solid #000;
     border-radius: 0px 4px 4px 0px;
     cursor: pointer;
 }
@@ -137,12 +139,14 @@ nav ul li a:hover{
     padding: 3px 10px;
     border-radius: 4px 4px 0px 0px;
     cursor: pointer;
+    margin-bottom: 0 !important;
    
 }
 
 .tab-ativo{
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
     font-weight: bold;
+    margin-bottom: 0 !important;
 }
 
 

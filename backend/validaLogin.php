@@ -5,7 +5,7 @@ include 'include/conexao.php';
 try {
 
     $email = $_POST['email'];  //[] sempre o que tiver no name
-    $senha = $_POST['senha'];
+    $senha = sha1($_POST['senha']);
     
     $sql = "SELECT email,senha FROM tb_usuarios WHERE email='$email' AND BINARY senha='$senha'";
 
