@@ -45,3 +45,6 @@ const validaLogin = () =>{
 
 }
 //final da funçao de add usuario
+
+
+
