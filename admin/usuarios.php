@@ -37,13 +37,13 @@
      <div class="div-professores">
 
          <div class="tabs">
-             <div class="titulo-principal tab-ativo" onclick="abaCadastro()">
+             <div id="aba-cadastro" class="titulo-principal tab-ativo" onclick="abaCadastro()">
                  <p class="titulo-texto">
                      Cadastro de Usuários
                  </p>
              </div>
 
-             <div class="titulo-principal" onclick="abaListagem()">
+             <div id="aba-listagem" class="titulo-principal" onclick="abaListagem()">
                  <p class="titulo-texto">
                      Listagem
                  </p>
@@ -117,9 +117,34 @@
                      <!-- <input type="text" name="estado" id="estado"> -->
                      <select name="estado" id="estado">
                          <option value="" disabled selected>Selecione...</option>
-                         <option value="SP">SP</option>
-                         <option value="RJ">RJ</option>
-                         <option value="MG">MG</option>
+                                    <option value="AC">Acre</option>
+                                    <option value="AL">Alagoas</option>
+                                    <option value="AP">Amapá</option>
+                                    <option value="AM">Amazonas</option>
+                                    <option value="BA">Bahia</option>
+                                    <option value="CE">Ceará</option>
+                                    <option value="DF">Distrito Federal</option>
+                                    <option value="ES">Espírito Santo</option>
+                                    <option value="GO">Goiás</option>
+                                    <option value="MA">Maranhão</option>
+                                    <option value="MT">Mato Grosso</option>
+                                    <option value="MS">Mato Grosso do Sul</option>
+                                    <option value="MG">Minas Gerais</option>
+                                    <option value="PA">Pará</option>
+                                    <option value="PB">Paraíba</option>
+                                    <option value="PR">Paraná</option>
+                                    <option value="PE">Pernambuco</option>
+                                    <option value="PI">Piauí</option>
+                                    <option value="RJ">Rio de Janeiro</option>
+                                    <option value="RN">Rio Grande do Norte</option>
+                                    <option value="RS">Rio Grande do Sul</option>
+                                    <option value="RO">Rondônia</option>
+                                    <option value="RR">Roraima</option>
+                                    <option value="SC">Santa Catarina</option>
+                                    <option value="SP">São Paulo</option>
+                                    <option value="SE">Sergipe</option>
+                                    <option value="TO">Tocantins</option>
+                                    <option value="EX">Estrangeiro</option>
                      </select>
                  </div>
                  <div>
@@ -140,7 +165,7 @@
                  <div>
                      <label for="">Pesquisar Usuarios</label>
                      <div class="div-cep">
-                         <input class="input-cep" type="text" name="pesquisar" id="pesquisar">
+                         <input class="input-cep" type="text" name="pesquisar" id="pesquisar" placeholder="Digite um nome ou CPF">
                          <button class="btn-cep" type="button" onclick="pesquisarUsuario()"><i class="fa-solid fa-magnifying-glass"></i></button>
                      </div>
                  </div>
